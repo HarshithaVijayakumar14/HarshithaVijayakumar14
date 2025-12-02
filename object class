@@ -1,0 +1,20 @@
+ class Person(
+    String name;
+    int age;
+    public String toString() {
+        return "Person[name=" + name + ", age=" + age + "]";
+    }
+    public int hashCode() {
+        return age * 10; 
+    }
+ }
+ public class TestAll {
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.name = "Upasana";
+        p.age = 24;
+        System.out.println("toString(): " + p.toString());
+        System.out.println("getClass(): " + p.getClass());
+        System.out.println("hashCode(): " + p.hashCode());
+    }
+ }
