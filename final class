@@ -1,0 +1,16 @@
+ final class Vehicle {          
+// final class
+ void display() {
+ System.out.println("This is a Vehicle class");
+ }
+ }
+ // 
+❌
+ Error: Cannot inherit from final class
+ // class Car extends Vehicle {}   // This will give compile-time error
+ public class TestFinalClass {
+ public static void main(String[] args) {
+ Vehicle v = new Vehicle();
+ v.display();
+ }
+ }
