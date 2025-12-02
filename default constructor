@@ -1,0 +1,9 @@
+class Car {
+    String model;
+    int year;
+
+    Car() {   // Default constructor
+        model = "Unknown";
+        year = 2020;
+    }
+}
