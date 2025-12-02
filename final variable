@@ -1,0 +1,13 @@
+class Student {
+    final int ROLL_NO = 101;   // final variable assigned directly
+    void display() {
+        System.out.println("Roll Number: " + ROLL_NO);
+        // ROLL_NO = 200;  // 
+❌
+ Error: cannot assign value to final variable
+    }
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.display();
+    }
+ }
