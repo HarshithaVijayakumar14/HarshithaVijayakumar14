@@ -1,0 +1,17 @@
+ class Parent {
+    final void show() {        // final method
+        System.out.println("This is Parent's show method");
+    }
+ }
+ class Child extends Parent {
+    // 
+❌
+ Cannot override final method
+    // void show() {}    // Error
+ }
+ public class TestFinalMethod {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.show();     // Calls Parent's method
+    }
+ }
